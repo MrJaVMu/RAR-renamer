@@ -1,0 +1,33 @@
+Requisitos previos
+Instalar dependencias:
+
+ >> npm install unrar-promise fs-extra path
+
+        unrar-promise: Para extraer información del .rar.
+        fs-extra: Para manejar archivos y renombrarlos.
+        path: Módulo nativo de Node.js para trabajar con rutas.
+
+
+Asegurar que unrar está instalado en tu sistema:
+    Windows: Descarga UnRAR.exe desde rarlab.com y colócalo en tu PATH.
+
+
+
+NOTA: la primera vez no me dajaba ejecutar npm
+porque la ejecución de scripts está deshabilitada en este sistema
+Hay que activarla via Powershell (como admin)
+https://learn.microsoft.com/es-es/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.5
+
+
+
+> Get-ExecutionPolicy -list
+> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+
+        Scope ExecutionPolicy
+        ----- ---------------
+MachinePolicy       Undefined
+   UserPolicy       Undefined
+      Process       Undefined
+  CurrentUser    RemoteSigned
+ LocalMachine       AllSigned
